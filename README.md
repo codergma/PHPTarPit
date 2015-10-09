@@ -6,3 +6,4 @@
 
 test_header.php  header()函数的用法
 test_cookie.php  setcookie()函数的用法
+sendmail			　 发送邮件，通过PHPMailer实现
