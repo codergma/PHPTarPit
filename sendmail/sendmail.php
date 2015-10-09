@@ -37,14 +37,14 @@ $mail = new PHPMailer;
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.163.com'; 		      			  //指定主要的和备份SMTP服务器
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = '';            // SMTP username
-$mail->Password = '...';                           // SMTP password
+$mail->Username = 'fortestaa@163.com';            	  // SMTP username用来连接SMTP服务器
+$mail->Password = '123456q';                          // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
 
-$mail->setFrom('xiatianliubin@163.com', 'liubin');
-$mail->addAddress('codergma@163.com', 'codergma');     // Add a recipient
-// $mail->addAddress('xiatianliubin@163.com');               // Name is optional
+$mail->setFrom('fortestaa@163.com', 'fortestaa');		//发件人邮箱，用户名
+$mail->addAddress('fortestab@163.com', 'fortestab');        //收件人邮箱，用户名
+// $mail->addAddress('fortestac@163.com');                 // 收件人邮箱，用户名可选
 // $mail->addReplyTo('info@example.com', 'Information');
 // $mail->addCC('cc@example.com');
 // $mail->addBCC('bcc@example.com');
