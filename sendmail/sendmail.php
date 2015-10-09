@@ -35,10 +35,10 @@ $mail = new PHPMailer;
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.163.com'; 		      // Specify main and backup SMTP servers
+$mail->Host = 'smtp.163.com'; 		      			  //指定主要的和备份SMTP服务器
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'xiatianliubin@163.com';                 // SMTP username
-$mail->Password = 'xiatianlb123...';                           // SMTP password
+$mail->Username = '';            // SMTP username
+$mail->Password = '...';                           // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
 
