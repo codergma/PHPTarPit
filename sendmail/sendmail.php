@@ -32,22 +32,22 @@ require_once 'class.smtp.php';
 
 $mail = new PHPMailer;
 
-//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+//$mail->SMTPDebug = 3;                               // 0-4输出详细信息
 
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.163.com'; 		      // Specify main and backup SMTP servers
+$mail->isSMTP();                                      // 通过SMTP协议发送邮件
+$mail->Host = 'smtp.163.com'; 		                  // 指定SMTP邮件服务器
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'xiatianliubin@163.com';                 // SMTP username
-$mail->Password = 'xiatianlb123...';                           // SMTP password
+$mail->Username = 'xiatianliubin@163.com';            // SMTP username
+$mail->Password = '***************';                  // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
 
-$mail->setFrom('xiatianliubin@163.com', 'liubin');
-$mail->addAddress('codergma@163.com', 'codergma');     // Add a recipient
-// $mail->addAddress('xiatianliubin@163.com');               // Name is optional
+$mail->setFrom('xiatianliubin@163.com', 'liubin');     // 发件人
+$mail->addAddress('codergma@163.com', 'codergma');     // 收件人
+$mail->addAddress('fortestaa@163.com');                // 姓名可选
 // $mail->addReplyTo('info@example.com', 'Information');
-// $mail->addCC('cc@example.com');
-// $mail->addBCC('bcc@example.com');
+$mail->addCC('fortestab@163.com');						//抄送人
+$mail->addBCC('fortestac@163.com');						//密送人
 
 //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
