@@ -32,21 +32,22 @@ require_once 'class.smtp.php';
 
 $mail = new PHPMailer;
 
-// $mail->SMTPDebug = 3;                               // 0-4输出更详细的错误提示
-$mail->isSMTP();                                       // 使用SMTP协议发送邮件
-$mail->Host = 'smtp.163.com'; 		                   // 指定SMTP服务器地址
-$mail->SMTPAuth = true;                                // Enable SMTP authentication
-$mail->Username = 'xiatianliubin@163.com';             // SMTP username 确保此邮箱开通了SMTP服务,最好不要使用新申请的邮箱
-$mail->Password = 'coder.gmail123';                    // SMTP password 可能是邮箱密码可能是客户端授权码,都试一下
-$mail->SMTPSecure = 'ssl';                             // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587;                                     // TCP port to connect to
+//$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
-$mail->setFrom('xiatianliubin@163.com', 'liubin');     // 发件人
-$mail->addAddress('fortestaa@163.com', 'aa');          // 收件人
-// $mail->addAddress('fortestac@163.com');             // 收件人姓名可选
-$mail->addReplyTo('fortestab@163.com', 'ab');
-$mail->addCC('fortestac@163.com');						//抄送人
-$mail->addBCC('codergma@163.com');						//密送人
+$mail->isSMTP();                                      // Set mailer to use SMTP
+$mail->Host = 'smtp.163.com'; 		      // Specify main and backup SMTP servers
+$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->Username = 'xiatianliubin@163.com';                 // SMTP username
+$mail->Password = 'xiatianlb123...';                           // SMTP password
+$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 587;                                    // TCP port to connect to
+
+$mail->setFrom('xiatianliubin@163.com', 'liubin');
+$mail->addAddress('codergma@163.com', 'codergma');     // Add a recipient
+// $mail->addAddress('xiatianliubin@163.com');               // Name is optional
+// $mail->addReplyTo('info@example.com', 'Information');
+// $mail->addCC('cc@example.com');
+// $mail->addBCC('bcc@example.com');
 
 //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
