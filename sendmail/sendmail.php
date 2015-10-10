@@ -45,6 +45,7 @@ $mail->Port = 587;                                    // TCP port to connect to
 $mail->setFrom('xiatianliubin@163.com', 'liubin');     // 发件人
 $mail->addAddress('codergma@163.com', 'codergma');     // 收件人
 $mail->addAddress('fortestaa@163.com');                // 姓名可选
+
 // $mail->addReplyTo('info@example.com', 'Information');
 $mail->addCC('fortestab@163.com');						//抄送人
 $mail->addBCC('fortestac@163.com');						//密送人
