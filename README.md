@@ -4,5 +4,5 @@
 
 
 test_header.php  header()函数的用法<br/>
-test_cookie.php  setcookie()函数的用法
-sendmail			　 发送邮件，通过PHPMailer实现
+test_cookie.php  setcookie()函数的用法<br/>
+sendmail			　 发送邮件，通过PHPMailer实现<br/>
