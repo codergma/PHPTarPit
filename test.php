@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title></title>
+</head>
+<body>
+
 <?php
 /* 
 
@@ -97,3 +105,25 @@
 	echo "first  method:".$global_param.'<br/>';
 	modify_global2();
 	echo "second method:".$global_param.'<br/>';
+//获取文件的扩展名
+	// echo __FILE__.'<br/>';
+	echo '---处理路径函数---<br/>';
+	echo pathinfo(__FILE__,PATHINFO_EXTENSION).'<br/>';
+	echo '---处理字符串---<br/>';
+	echo substr(strrchr(__FILE__,'.'),1).'<br/>';
+	echo substr(__FILE__,strpos(__FILE__, '.')+1).'<br/>';
+	echo substr(strrev(__FILE__),0,strpos(strrev(__FILE__),'.')).'<br/>';
+	echo '---分割字符串---<br/>';
+	echo array_pop(explode('.',__FILE__)).'<br/>';
+
+	$tok = strtok(__FILE__, '.');
+	while ($tok !== false)
+	{
+		$result = $tok;
+		$tok = strtok('.');
+	}
+	echo $result;
+
+?>	
+</body>
+</html>
