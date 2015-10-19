@@ -106,7 +106,6 @@
 	modify_global2();
 	echo "second method:".$global_param.'<br/>';
 //获取文件的扩展名
-	// echo __FILE__.'<br/>';
 	echo '---处理路径函数---<br/>';
 	echo pathinfo(__FILE__,PATHINFO_EXTENSION).'<br/>';
 	echo '---处理字符串---<br/>';
@@ -122,7 +121,7 @@
 		$result = $tok;
 		$tok = strtok('.');
 	}
-	echo $result;
+	echo $result.'<br/>';
 
 ?>	
 </body>
