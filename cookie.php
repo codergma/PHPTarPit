@@ -22,6 +22,7 @@ var_dump($result);
 echo $_COOKIE[$name];//setcookie()函数调用之后，并不能立即生效，所以并没有输出值
 										//所以最好在setcookie()函数之后接着执行 $_COOKIE[$name]=$value;
 
+//还发现一个问题，有时候不设置path,domain，虽然setcookie返回true,但是不能在浏览器创建cookie;
 
 
 
