@@ -113,7 +113,8 @@
 	echo substr(__FILE__,strpos(__FILE__, '.')+1).'<br/>';
 	echo substr(strrev(__FILE__),0,strpos(strrev(__FILE__),'.')).'<br/>';
 	echo '---分割字符串---<br/>';
-	echo array_pop(explode('.',__FILE__)).'<br/>';
+	$var =explode('.',__FILE__);
+	echo array_pop($var).'<br/>';
 
 	$tok = strtok(__FILE__, '.');
 	while ($tok !== false)
@@ -124,6 +125,39 @@
 	echo $result.'<br/>';
 //打印前一天的时间
 	echo date("Y-m-d H:i:s",strtotime("-1 day")).'<br/>';
+//返回找不到文件的提示
+	header ('HTTP/1.0 401 NOT FOUND');
+//遍历一个目录下的所有子目录和文件
+	function my_scandir($filename)
+	{
+		if(!is_dir($filename))
+		{
+			return false;
+		}
+
+		if (!$res = dir($filename)) 
+		{
+			return false;
+		}
+
+		$files = array();
+		while ( ($file = $res->read()) !== false)
+		{
+			if ($file!='.' && $file!='..')
+			{
+				array_push($files, $file);
+				if (is_dir($file))
+				{
+					$tmp = my_scandir($file);
+					$files = array_merge($files,$tmp);
+				}
+
+			}
+
+		}
+		return $files;
+	}
+	var_dump(my_scandir('/home/liubin/Downloads/PHPTarPit'));
 
 ?>	
 </body>
