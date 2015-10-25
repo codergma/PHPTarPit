@@ -158,6 +158,12 @@
 		return $files;
 	}
 	var_dump(my_scandir('/home/liubin/Downloads/PHPTarPit'));
+//正则表达式，过滤js脚本
+	$subject =  file_get_contents('http://www.mianwww.com/html/2009/01/365.html');
+	$pattern = '/<script.*?<\/script>/is';//?表示非贪婪，i忽略大小写，使得'.'可以匹配换行符；
+	//$pattern = '/<script[\s\S]*?<\/script>/i'; 
+	$str = preg_replace($pattern, '', $subject);
+	file_put_contents('filename.txt', $str);
 
 ?>	
 </body>

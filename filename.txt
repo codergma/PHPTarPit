@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  PHP面试题及答案2  ——  IT公司面试手册 
+</title>
+<meta name="keywords" content="PHP 面试题及答案 笔试题" />
+<meta name="description" content="PHP面试题笔试题:1.在PHP中，当前脚本的名称（不包括路径和查询字符串）记录在预定义变量（1）中；而链接到当前页面的的前一页面URL记录在预定义变量（2）中
+
+">
+
+<link rel="stylesheet" href="http://www.mianwww.com/wp-content/themes/mianwww/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="IT公司面试手册 RSS Feed" href="http://www.mianwww.com/feed" />
+<link rel="pingback" href="http://www.mianwww.com/xmlrpc.php" />
+<link rel="icon" href="http://www.mianwww.com/favicon.gif" type="image/gif" >
+<link rel="alternate" type="application/rss+xml" title="IT公司面试手册 &raquo; PHP面试题及答案2 Comments Feed" href="http://www.mianwww.com/html/2009/01/365.html/feed" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.mianwww.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.mianwww.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='PHP面试题及答案1' href='http://www.mianwww.com/html/2009/01/360.html' />
+<link rel='next' title='PHP面试题及答案3' href='http://www.mianwww.com/html/2009/01/371.html' />
+<meta name="generator" content="WordPress 3.7" />
+<link rel='canonical' href='http://www.mianwww.com/html/2009/01/365.html' />
+<link rel='shortlink' href='http://www.mianwww.com/?p=365' />
+</head>
+<body>
+  <div id="header">
+  	<div id="headercontent">
+    <div id="headerimg">
+	  <h1><a title="IT公司面试手册: Home" href="http://www.mianwww.com"></a></h1>	     
+	</div><!-- [headerimg] -->
+	 <div id="headermenu"><a href="/">首页</a>&nbsp;&nbsp;
+	 	<a title="免费发布招聘信息，内部推荐" href="http://www.mianwww.com/job" target="_blank">招聘<img alt="免费发布招聘信息，内部推荐" src="http://www.mianwww.com/wp-content/themes/mianwww/images/hot.gif"></a>&nbsp;&nbsp;
+	 	<a href="http://www.mianwww.com/company" title="各大公司面试题及答案,公司面试秘籍,软件公司面试题,公司内部面试资料 " target="_blank">名企</a>&nbsp;&nbsp;
+		<a href="http://code.mianwww.com" title="各大公司面试题,公司面试秘籍,软件公司面试题,公司内部面试资料,IT公司面试手册 " target="_blank">代码<img  alt=各大公司面试题,公司面试秘籍,软件公司面试题,公司内部面试资料,IT公司面试手册" src="http://www.mianwww.com/wp-content/themes/mianwww/images/hot.gif"></a>&nbsp;&nbsp;
+		<a href="http://www.mianwww.com/jiaocheng" title="Java教程 .NET教程  PHP教程 Android教程 Oracle教程  Linux教程 前端开发教程 软件测试教程" target="_blank">教程<img alt="教程" src="http://www.mianwww.com/wp-content/themes/mianwww/images/hot.gif"></a>&nbsp;&nbsp;
+	 	<a href="http://www.mianwww.com/about" target="_blank">关于</a>
+	 </div>	
+	</div>	
+  </div><!-- [header] -->
+  <div id="nav">
+	<div id="navi">
+		<ul>
+		  	<li class="cat-item cat-item-6"><a href="http://www.mianwww.com/html/category/it-interview/java" title="Java面试题 Java笔试题 Java程序员面试题">Java</a>
+</li>
+	<li class="cat-item cat-item-73"><a href="http://www.mianwww.com/html/category/it-interview/softwaretest" title="软件测试面试题 软件测试笔试题 测试工程师面试题">软件测试</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="http://www.mianwww.com/html/category/it-interview/cpp" title="C++面试题 C++笔试题">C++</a>
+</li>
+	<li class="cat-item cat-item-53"><a href="http://www.mianwww.com/html/category/it-interview/mianjing" title="面经网 面经 面霸 面瘫">网友面经</a>
+</li>
+	<li class="cat-item cat-item-77"><a href="http://www.mianwww.com/html/category/it-interview/developer" title="程序员面试宝典 程序员面试 面试题 笔试题">程序员</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://www.mianwww.com/html/category/it-interview/database" title="数据库面试题 数据库笔试题 DBA面试题 DBA笔试题">数据库</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://www.mianwww.com/html/category/it-interview/net" title=".NET面试题 .NET笔试题 
+注：.NET相关的面试题还包括C#面试题专栏和ASP.NET面试题专栏，请点击上面相关的栏目进行浏览">.NET</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://www.mianwww.com/html/category/it-interview/webdev" title="web前端开发面试题 Web开发面试题 前端开发面试题	">Web开发</a>
+</li>
+	<li class="cat-item cat-item-142"><a href="http://www.mianwww.com/html/category/it-interview/c-it-interview" title="C语言面试题 C语言笔试题">C语言</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="http://www.mianwww.com/html/category/it-interview/network" title="网络工程师面试题 网络工程师笔试题">网络技术</a>
+</li>
+	<li class="cat-item cat-item-97"><a href="http://www.mianwww.com/html/category/it-interview/interviewinstruction" title="面试指导">面试指导</a>
+</li>
+	<li class="cat-item cat-item-100"><a href="http://www.mianwww.com/html/category/it-interview/oracle-it-interview" title="Oracle面试题 Oracle笔试题 Oracle DBA 面试题 ">Oracle</a>
+</li>
+	<li class="cat-item cat-item-42"><a href="http://www.mianwww.com/html/category/it-interview/english" title="面试英语自我介绍 英语面试问题 口语面试 面试对话 面试视频 电话面试 外企 常见问题 面试技巧">英语</a>
+</li>
+	<li class="cat-item cat-item-41"><a href="http://www.mianwww.com/html/category/it-interview/iqtest" title="IQ测试 IQ智力题 智力测试题 智力面试题">IQ智力</a>
+</li>
+	<li class="cat-item cat-item-141"><a href="http://www.mianwww.com/html/category/it-interview/linux-it-interview" title="Linux面试题 Linux笔试题">Linux</a>
+</li>
+	<li class="cat-item cat-item-144"><a href="http://www.mianwww.com/html/category/it-interview/csharp" title="C#面试题 C#笔试题">C#</a>
+</li>
+	<li class="cat-item cat-item-52"><a href="http://www.mianwww.com/html/category/it-interview/php" title="PHP面试题 PHP笔试题">PHP</a>
+</li>
+	<li class="cat-item cat-item-145"><a href="http://www.mianwww.com/html/category/it-interview/xiangmuguanli" title="项目经理面试题 项目管理笔试题">项目管理</a>
+</li>
+	<li class="cat-item cat-item-38"><a href="http://www.mianwww.com/html/category/it-interview/unix" title="Unix管理员面试题 Unix笔试题 AIX面试题">UNIX</a>
+</li>
+	<li class="cat-item cat-item-192"><a href="http://www.mianwww.com/html/category/it-interview/algorithm" title="算法面试题 算法笔试题">算法</a>
+</li>
+	<li class="cat-item cat-item-91"><a href="http://www.mianwww.com/html/category/it-interview/loadrunner" title="LoadRunner面试题 LoadRunner笔试题">LoadRunner</a>
+</li>
+	<li class="cat-item cat-item-66"><a href="http://www.mianwww.com/html/category/it-interview/hibernate" title="Hibernate面试题 Hibernate笔试题">Hibernate</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="http://www.mianwww.com/html/category/it-interview/waiqizone" title="外企面试题 外企笔试题 外企面试英语	">外企</a>
+</li>
+	<li class="cat-item cat-item-88"><a href="http://www.mianwww.com/html/category/it-interview/graduate" title="应届生面试自我介绍 应届生面试技巧 应届生面试问题 应届生面试着装 应届生面试题">应届生</a>
+</li>
+	<li class="cat-item cat-item-143"><a href="http://www.mianwww.com/html/category/it-interview/aspnet" title="ASP.NET面试题 ASP.NET笔试题">ASP.NET</a>
+</li>
+	<li class="cat-item cat-item-59"><a href="http://www.mianwww.com/html/category/it-interview/spring" title="Spring面试题 Spring笔试题">Spring</a>
+</li>
+	<li class="cat-item cat-item-92"><a href="http://www.mianwww.com/html/category/it-interview/struts-it-interview" title="Struts面试题 Struts笔试题">Struts</a>
+</li>
+	<li class="cat-item cat-item-109"><a href="http://www.mianwww.com/html/category/it-interview/ajax" title="AJAX面试题 AJAX笔试题 注：AJAX相关的面试题还包括Web开发面试题专栏请点击上面相关的栏目进行浏览，包含Web前端，UI设计等相关的面试题">AJAX</a>
+</li>
+	<li class="cat-item cat-item-201"><a href="http://www.mianwww.com/html/category/it-interview/android" title="Android面试题 Android笔试题 注：Android面试过程中一般包含比例不小的Java相关知识，可以关注上面的相关分类专栏进行学习">Android</a>
+</li>
+	<li class="cat-item cat-item-111"><a href="http://www.mianwww.com/html/category/it-interview/servlet" title="Servlet面试题 Servlet笔试题">Servlet</a>
+</li>
+	<li class="cat-item cat-item-140"><a href="http://www.mianwww.com/html/category/it-interview/jsp" title="JSP面试题 JSP笔试题">JSP</a>
+</li>
+	<li class="cat-item cat-item-94"><a href="http://www.mianwww.com/html/category/it-interview/ejb" title="EJB面试题 EJB笔试题">EJB</a>
+</li>
+	<li class="cat-item cat-item-96"><a href="http://www.mianwww.com/html/category/it-interview/hrinterview" title="这一部分重要是针对非技术方面的面试">HR面试</a>
+</li>
+	<li class="cat-item cat-item-146"><a href="http://www.mianwww.com/html/category/it-interview/ruanjiangongcheng" title="软件工程面试题">软件工程</a>
+</li>
+	<li class="cat-item cat-item-80"><a href="http://www.mianwww.com/html/category/it-interview/embed" title="嵌入式面试题 嵌入式工程师面试题 嵌入式c语言面试题 华为嵌入式面试题 嵌入式linux面试题">嵌入式开发</a>
+</li>
+	<li class="cat-item cat-item-110"><a href="http://www.mianwww.com/html/category/it-interview/secrity" title="网络安全面试题 网络安全笔试题">网络安全</a>
+</li>
+	<li class="cat-item cat-item-114"><a href="http://www.mianwww.com/html/category/it-interview/soa" title="SOA面试题 SOA笔试题">SOA</a>
+</li>
+	<li class="cat-item cat-item-98"><a href="http://www.mianwww.com/html/category/it-interview/mysql-it-interview" title="MYSQL DBA面试题 笔试题">MySQL</a>
+</li>
+	<li class="cat-item cat-item-99"><a href="http://www.mianwww.com/html/category/it-interview/sqlserver" title="SQL Server面试题 SQL Server笔试题">SQL Server</a>
+</li>
+	<li class="cat-item cat-item-101"><a href="http://www.mianwww.com/html/category/it-interview/asp-it-interview" title="ASP面试题 ASP笔试题">ASP</a>
+</li>
+	<li class="cat-item cat-item-113"><a href="http://www.mianwww.com/html/category/it-interview/python" title="Python面试题 Python笔试题">Python</a>
+</li>
+	<li class="cat-item cat-item-116"><a href="http://www.mianwww.com/html/category/it-interview/qtp" title="软件测试 QTP 面试题">QTP</a>
+</li>
+	<li class="cat-item cat-item-39"><a href="http://www.mianwww.com/html/category/it-interview/mobile" title="iPhone开发面试题 iOS开发面试题 Apple开发">iOS</a>
+</li>
+	<li class="cat-item cat-item-196"><a href="http://www.mianwww.com/html/category/it-interview/architect" title="架构师面试题 架构师笔试题">架构师</a>
+</li>
+	<li class="cat-item cat-item-118"><a href="http://www.mianwww.com/html/category/it-interview/ruby" title="Ruby面试题 Ruby笔试题 RoR面试题">Ruby</a>
+</li>
+	<li class="cat-item cat-item-108"><a href="http://www.mianwww.com/html/category/it-interview/delphi" title="Delphi面试题  Delphi笔试题">Delphi</a>
+</li>
+	<li class="cat-item cat-item-202"><a href="http://www.mianwww.com/html/category/it-interview/%e7%a1%ac%e4%bb%b6" title="硬件工程师面试题 硬件面试题 硬件工程师面试 硬件工程师面试题目 硬件笔试题">硬件</a>
+</li>
+	<li class="cat-item cat-item-171"><a href="http://www.mianwww.com/html/category/it-interview/flex" title="Flex面试题 Flex笔试题">Flex</a>
+</li>
+		</ul> 
+	</div><!-- [navi] -->
+  </div><!-- [header] -->
+ <div id="wrap">
+
+<div id="content">
+	<!--
+	<div width="728px" style="margin-bottom:5px;">
+    
+	
+    </div>-->
+   	 
+    <div class="post" id="post-365">
+		
+        <h3><a href="http://www.mianwww.com/html/2009/01/365.html" rel="bookmark" title="查看: PHP面试题及答案2">PHP面试题及答案2</a> <g:plusone></g:plusone></h3>
+		<span class="post-cat"><a href="http://www.mianwww.com/html/category/it-interview/php" title="View all posts in PHP" rel="category tag">PHP</a></span>
+
+		<div class="single-post-content">
+			<!--广告 Start-->
+			<div style="float:right;">
+			
+			</div>
+			<!--广告 End-->		
+			
+		  <p>1.在PHP中，当前脚本的名称（不包括路径和查询字符串）记录在预定义变量（1）中；而链接到当前页面的的前一页面URL记录在预定义变量（2）中<br />
+<coolcode lang="php" download="" linenum="off"><br />
+<?php<br />
+//本页地址，SCRIPT_NAME也可以:php/test.php<br />
+echo $_SERVER['PHP_SELF']."<br />&#8220;;<br />
+//链接到当前页面的前一页面的 URL 地址:<br />
+echo $_SERVER['HTTP_REFERER'].&#8221;<br />&#8220;;</p>
+<p>//其它的见参考手册：语言参考》变量》预定义变量<br />
+//前执行脚本的绝对路径名:D:Inetpubwwwrootphp est.php<br />
+echo $_SERVER["SCRIPT_FILENAME"].&#8221;<br />&#8220;;<br />
+//正在浏览当前页面用户的 IP 地址:127.0.0.1<br />
+echo $_SERVER["REMOTE_ADDR"].&#8221;<br />&#8220;;<br />
+//查询（query）的字符串（URL 中第一个问号 ? 之后的内容）:id=1&#038;bi=2<br />
+echo $_SERVER["QUERY_STRING"].&#8221;<br />&#8220;;<br />
+//当前运行脚本所在的文档根目录:d:inetpubwwwroot<br />
+echo $_SERVER["DOCUMENT_ROOT"].&#8221;<br />&#8220;;<br />
+?><br />
+</coolcode></p>
+<p>2.执行程序段<?php echo 8%(-2) ?>将输出__。<br />
+<coolcode lang="php" download="" linenum="off"><br />
+<?php<br />
+//参考手册》语言参考》运算符》算术运算符》%为取模运算,输出0<br />
+echo 8%(-2)."<br />&#8220;;<br />
+//取模 $a % $b 在 $a 为负值时的结果也是负值。输出-2<br />
+echo ((-8)%3).&#8221;<br />&#8220;;<br />
+//输出2<br />
+echo (8%(-3)).&#8221;<br />&#8220;;<br />
+?><br />
+</coolcode><br />
+3.在HTTP 1.0中，状态码 401 的含义是____；如果返回“找不到文件”的提示，则可用 header 函数，其语句为____。</p>
+<p>答：401表示未授权;header(&#8220;HTTP/1.0 404 Not Found&#8221;);[见参考手册》函数参考》HTTP函数》header]</p>
+<p>4.数组函数 arsort 的作用是____；语句 error_reporting(2047)的作用是____。</p>
+<p>答：arsort:对数组进行逆向排序并保持索引关系 error_reporting(2047)的作用是:report All errors and warnings</p>
+<p>5.写出一个正则表达式，过虑网页上的所有JS/VBS脚本（即把script标记及其内容都去掉）：<br />
+<coolcode lang="php" download="" linenum="off"><br />
+<?php<br />
+$script="以下内容不显示：";<br />
+echo preg_replace("//si", "替换内容", $script);<br />
+?><br />
+</coolcode><br />
+6.以Apache模块的方式安装PHP，在文件http.conf中首先要用语句____动态装载PHP模块，<br />
+然后再用语句____使得Apache把所有扩展名为php的文件都作为PHP脚本处理。<br />
+答：LoadModule php5_module "c:/php/php5apache2.dll";AddType application/x-httpd-php .php</p>
+<p>见参考手册》目录》II. 安装与配置》6. Windows 系统下的安装》Microsoft Windows 下的 Apache 2.0.x</p>
+<p>7.语句 include 和 require 都能把另外一个文件包含到当前文件中，它们的区别是____；为了避免多次包含同一文件，可以用语句____来代替它们。<br />
+答：在如何处理失败时，include() 产生一个警告而 require() 则导致一个致命错误;require_once()/include_once()</p>
+<p>8.一个函数的参数不能是对变量的引用，除非在php.ini中把____设为on.<br />
+答：allow_call_time_pass_reference boolean :是否启用在函数调用时强制参数被按照引用传递, 见参考手册》附录G</p>
+<p>9.SQL 中LEFT JOIN的含义是__,如果 tbl_user记录了学生的姓名(name)和学号(ID)，<br />
+tbl_score记录了学生（有的学生考试以后被开除了，没有其记录）的学号(ID)和考试成绩(score)以及考试科目(subject)，要想打印出各个学生姓名及对应的的各科总成绩，则可以用SQL语句____.</p>
+<p>答：自然左外连接<br />
+<coolcode lang="sql" download="" linenum="off"><br />
+create database phpinterview;<br />
+use phpinterview<br />
+create table tbl_user<br />
+(<br />
+    ID                             int                            not null,<br />
+    name                           varchar(50)                    not null,<br />
+   primary key (ID)<br />
+);<br />
+create table tbl_score<br />
+(<br />
+    ID                             int                            not null,<br />
+    score                          dec(6,2)                       not null,<br />
+    subject                        varchar(20)                    not null<br />
+);</p>
+<p>insert into tbl_user (ID, name) values (1, 'beimu');<br />
+insert into tbl_user (ID, name) values (2, 'aihui');<br />
+insert into tbl_score (ID, score, subject) values (1, 90, '语文');<br />
+insert into tbl_score (ID, score, subject) values (1, 80, '数学');<br />
+insert into tbl_score (ID, score, subject) values (2, 86, '数学');<br />
+insert into tbl_score (ID, score, subject) values (2, 96, '语文');</p>
+<p>select A.id,sum(B.score) as sumscore<br />
+from tbl_user A left join tbl_score B<br />
+on A.ID=B.ID<br />
+group by A.id<br />
+</coolcode><br />
+10. 在PHP中，heredoc是一种特殊的字符串，它的结束标志必须____<br />
+答：结束标识符所在的行不能包含任何其它字符除";"</p>
+<p>11.写一个函数，能够遍历一个文件夹下的所有文件和子文件夹。<br />
+<coolcode lang="php" download="" linenum="off"><br />
+<?php<br />
+function my_scandir($dir)<br />
+{<br />
+    $files=array();<br />
+    if(is_dir($dir))<br />
+     {<br />
+        if($handle=opendir($dir))<br />
+         {<br />
+            while(($file=readdir($handle))!==false)<br />
+             {<br />
+                if($file!="." &#038;&#038; $file!="..")<br />
+                 {<br />
+                    if(is_dir($dir."/".$file))<br />
+                     {<br />
+                        $files[$file]=my_scandir($dir."/".$file);<br />
+                     }<br />
+                    else<br />
+                     {<br />
+                        $files[]=$dir."/".$file;<br />
+                     }<br />
+                 }<br />
+             }<br />
+            closedir($handle);<br />
+            return $files;<br />
+         }<br />
+     }<br />
+}<br />
+print_r(my_scandir("D:Program FilesInternet ExplorerMUI"));<br />
+?><br />
+</coolcode></p>
+		  		</div>
+		<h3 class="otherart">同类其他面试题 点击新一篇或旧一篇可浏览全部同类面试题</h3>
+		<div class="post-next">新一篇：<a href="http://www.mianwww.com/html/2009/01/371.html" rel="next">PHP面试题及答案3</a><br/></div>
+		<div class="post-next">旧一篇：<a href="http://www.mianwww.com/html/2009/01/360.html" rel="prev">PHP面试题及答案1</a></div>	
+		
+<!-- You can start editing here. -->
+
+
+   
+		<!-- If comments are open, but there are no comments. -->
+
+	 
+
+
+<h3 id="respond">你有答案？ 你对以上面试题有意见？ 你想发表你的见解？ 写下来吧！你的分享将会让很多人受益！</h3>
+
+
+<form action="http://www.mianwww.com/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><strong>你的名字</strong> </label></p>
+
+
+<!--- quicktags --->
+
+<p><textarea name="comment" id="comment" cols="100%" rows="5" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="提 交" />
+<input type="hidden" name="comment_post_ID" value="365" />
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="20e703dd0f" /></p>		
+		
+	
+</form>
+
+
+		<h3 class="otherart">相关面试题</h3>
+		<div class="post-next">	
+		        ·<a href="http://www.mianwww.com/html/2014/03/20259.html">高级PHP面试题（结构化的PHP开发人员面试过程）</a><br/>
+                ·<a href="http://www.mianwww.com/html/2014/03/19987.html">PHP程序员笔试：请写一段PHP MYSQL基本操作的代码</a><br/>
+                ·<a href="http://www.mianwww.com/html/2013/10/18902.html">php程序员面试题</a><br/>
+                ·<a href="http://www.mianwww.com/html/2013/08/18613.html">做为程序员，到IT企业面试的时候肯定会有笔试这关，那就要考考你的PHP知识了，所以本站收集一些实用的php面试题及答案给大家</a><br/>
+                ·<a href="http://www.mianwww.com/html/2013/03/17958.html">用php实现斐波那契数列</a><br/>
+        		</div>		
+	</div><!-- [post] -->
+		
+  
+</div><!-- [content] -->
+
+<!-- sidebar begin -->
+<div id="sidebar">
+  <ul>
+
+  <h2><strong><font color="red">海量的面试题等你来搜！</font></strong><img src="http://www.mianwww.com/wp-content/themes/mianwww/images/hot.gif"></h2>
+<!-- Search Google -->
+<li>
+<br>
+
+<br>
+</li>
+<h2>请关注我们的微博</h2>
+<li>
+<iframe width="136" height="24" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" frameborder="No" border="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=136&height=24&uid=1896062817&style=2&btn=red&dpc=1"></iframe>
+</li>
+<li>
+<a alt="关注IT公司面试手册" href="http://t.sina.com.cn/mianwwwcom" target="_blank">IT公司面试手册官方微博</a>
+</li>
+<!--订阅End-->
+
+<li>
+<h2>IT公司面试题专栏<img alt="IT公司面试题专栏" src="http://www.mianwww.com/wp-content/themes/mianwww/images/hot.gif"></h2>
+<ul><li>
+<a href="http://www.mianwww.com/html/category/company-list/huawei" title="查看 华为面试题 笔试题"  class="sidebar_company">华为</a><a href="http://www.mianwww.com/html/category/company-list/tencent" title="查看 腾讯面试题 笔试题"  class="sidebar_company">腾讯</a><a href="http://www.mianwww.com/html/category/company-list/baidu" title="查看 百度面试题 笔试题"  class="sidebar_company">百度</a><a href="http://www.mianwww.com/html/category/company-list/alibaba" title="查看 阿里巴巴面试题 笔试题"  class="sidebar_company">阿里巴巴</a><a href="http://www.mianwww.com/html/category/company-list/zhongxing" title="查看 中兴面试题 笔试题"  class="sidebar_company">中兴</a><a href="http://www.mianwww.com/html/category/company-list/ibm" title="查看 IBM面试题 笔试题"  class="sidebar_company">IBM</a><a href="http://www.mianwww.com/html/category/company-list/microsoft" title="查看 微软面试题 笔试题"  class="sidebar_company">微软</a><a href="http://www.mianwww.com/html/category/company-list/taobao" title="查看 淘宝面试题 笔试题"  class="sidebar_company">淘宝</a><a href="http://www.mianwww.com/html/category/company-list/163" title="查看 网易面试题 笔试题"  class="sidebar_company">网易</a><a href="http://www.mianwww.com/html/category/company-list/sinosoft" title="查看 中软面试题 笔试题"  class="sidebar_company">中软</a><a href="http://www.mianwww.com/html/category/company-list/google" title="查看 Google面试题 笔试题"  class="sidebar_company">Google</a><a href="http://www.mianwww.com/html/category/company-list/eastsoft" title="查看 东软面试题 笔试题"  class="sidebar_company">东软</a><a href="http://www.mianwww.com/html/category/company-list/sina" title="查看 新浪面试题 笔试题"  class="sidebar_company">新浪</a><a href="http://www.mianwww.com/html/category/company-list/hundson" title="查看 恒生电子面试题 笔试题"  class="sidebar_company">恒生电子</a><a href="http://www.mianwww.com/html/category/company-list/chinamobile" title="查看 中国移动面试题 笔试题"  class="sidebar_company">中国移动</a><a href="http://www.mianwww.com/html/category/company-list/xunlei" title="查看 迅雷面试题 笔试题"  class="sidebar_company">迅雷</a><a href="http://www.mianwww.com/html/category/company-list/lenovo" title="查看 联想面试题 笔试题"  class="sidebar_company">联想</a><a href="http://www.mianwww.com/html/category/company-list/alipay" title="查看 支付宝面试题 笔试题"  class="sidebar_company">支付宝</a><a href="http://www.mianwww.com/html/category/company-list/zhedawangxin" title="查看 浙大网新面试题 笔试题"  class="sidebar_company">浙大网新</a><a href="http://www.mianwww.com/html/category/company-list/isoftstone" title="查看 软通动力面试题 笔试题"  class="sidebar_company">软通动力</a><a href="http://www.mianwww.com/html/category/company-list/hp" title="查看 惠普面试题 笔试题"  class="sidebar_company">惠普</a><a href="http://www.mianwww.com/html/category/company-list/datang" title="查看 大唐电信面试题 笔试题"  class="sidebar_company">大唐电信</a><a href="http://www.mianwww.com/html/category/company-list/accenture" title="查看 埃森哲面试题 笔试题"  class="sidebar_company">埃森哲</a><a href="http://www.mianwww.com/html/category/company-list/cisco" title="查看 Cisco面试题 笔试题"  class="sidebar_company">Cisco</a><a href="http://www.mianwww.com/html/category/company-list/wensichuangxin" title="查看 文思创新面试题 笔试题"  class="sidebar_company">文思创新</a><a href="http://www.mianwww.com/html/category/company-list/perficient" title="查看 博克软件面试题 笔试题"  class="sidebar_company">博克软件</a><a href="http://www.mianwww.com/html/category/company-list/digitalchina" title="查看 神州数码面试题 笔试题"  class="sidebar_company">神州数码</a><a href="http://www.mianwww.com/html/category/company-list/kingsoft" title="查看 金山面试题 笔试题"  class="sidebar_company">金山</a><a href="http://www.mianwww.com/html/category/company-list/ufida" title="查看 用友软件面试题 笔试题"  class="sidebar_company">用友软件</a><a href="http://www.mianwww.com/html/category/company-list/via" title="查看 威盛VIA面试题 笔试题"  class="sidebar_company">威盛VIA</a><a href="http://www.mianwww.com/html/category/company-list/360" title="查看 奇虎面试题 笔试题"  class="sidebar_company">奇虎</a><a href="http://www.mianwww.com/html/category/company-list/oracle-company-list" title="查看 Oracle (甲骨文)面试题 笔试题"  class="sidebar_company">Oracle (甲骨文)</a><a href="http://www.mianwww.com/html/category/company-list/sohu" title="查看 搜狐面试题 笔试题"  class="sidebar_company">搜狐</a><a href="http://www.mianwww.com/html/category/company-list/infosys" title="查看 Infosys面试题 笔试题"  class="sidebar_company">Infosys</a><a href="http://www.mianwww.com/html/category/company-list/uc" title="查看 UC面试题 笔试题"  class="sidebar_company">UC</a><a href="http://www.mianwww.com/html/category/company-list/snda" title="查看 盛大面试题 笔试题"  class="sidebar_company">盛大</a><a href="http://www.mianwww.com/html/category/company-list/newegg" title="查看 新蛋面试题 笔试题"  class="sidebar_company">新蛋</a><a href="http://www.mianwww.com/html/category/company-list/nsn" title="查看 诺西面试题 笔试题"  class="sidebar_company">诺西</a><a href="http://www.mianwww.com/html/category/company-list/innovationworks" title="查看 创新工场面试题 笔试题"  class="sidebar_company">创新工场</a><a href="http://www.mianwww.com/html/category/company-list/nortelnetwork" title="查看 北电网络面试题 笔试题"  class="sidebar_company">北电网络</a><a href="http://www.mianwww.com/html/category/company-list/suning" title="查看 苏宁面试题 笔试题"  class="sidebar_company">苏宁</a><a href="http://www.mianwww.com/html/category/company-list/ge" title="查看 GE面试题 笔试题"  class="sidebar_company">GE</a><a href="http://www.mianwww.com/html/category/company-list/h3c" title="查看 H3C面试题 笔试题"  class="sidebar_company">H3C</a><a href="http://www.mianwww.com/html/category/company-list/qushikeji" title="查看 趋势科技面试题 笔试题"  class="sidebar_company">趋势科技</a><a href="http://www.mianwww.com/html/category/company-list/chinaunioncom" title="查看 中国联通面试题 笔试题"  class="sidebar_company">中国联通</a><a href="http://www.mianwww.com/html/category/company-list/sap" title="查看 SAP面试题 笔试题"  class="sidebar_company">SAP</a><a href="http://www.mianwww.com/html/category/company-list/jd" title="查看 京东商城面试题 笔试题"  class="sidebar_company">京东商城</a><a href="http://www.mianwww.com/html/category/company-list/intel" title="查看 英特尔面试题 笔试题"  class="sidebar_company">英特尔</a><a href="http://www.mianwww.com/html/category/company-list/zhongguorenminyinhang" title="查看 中国人民银行面试题 笔试题"  class="sidebar_company">中国人民银行</a><a href="http://www.mianwww.com/html/category/company-list/zhongguodianxin" title="查看 中国电信面试题 笔试题"  class="sidebar_company">中国电信</a><a href="http://www.mianwww.com/html/category/company-list/asiainfo" title="查看 亚信科技面试题 笔试题"  class="sidebar_company">亚信科技</a><a href="http://www.mianwww.com/html/category/company-list/sogou" title="查看 搜狗面试题 笔试题"  class="sidebar_company">搜狗</a><a href="http://www.mianwww.com/html/category/company-list/xinrui" title="查看 新锐科技面试题 笔试题"  class="sidebar_company">新锐科技</a><a href="http://www.mianwww.com/html/category/company-list/csts" title="查看 花旗软件面试题 笔试题"  class="sidebar_company">花旗软件</a><a href="http://www.mianwww.com/html/category/company-list/jinzheng" title="查看 金证科技面试题 笔试题"  class="sidebar_company">金证科技</a><a href="http://www.mianwww.com/html/category/company-list/chinabank" title="查看 中国银行面试题 笔试题"  class="sidebar_company">中国银行</a><a href="http://www.mianwww.com/html/category/company-list/haihuikeji" title="查看 海辉科技面试题 笔试题"  class="sidebar_company">海辉科技</a><a href="http://www.mianwww.com/html/category/company-list/motorola" title="查看 摩托罗拉面试题 笔试题"  class="sidebar_company">摩托罗拉</a><a href="http://www.mianwww.com/html/category/company-list/dahua" title="查看 大华面试题 笔试题"  class="sidebar_company">大华</a><a href="http://www.mianwww.com/html/category/company-list/statestreet" title="查看 道富面试题 笔试题"  class="sidebar_company">道富</a><a href="http://www.mianwww.com/html/category/company-list/sanhui" title="查看 三汇软件面试题 笔试题"  class="sidebar_company">三汇软件</a><a href="http://www.mianwww.com/html/category/company-list/nokia" title="查看 诺基亚面试题 笔试题"  class="sidebar_company">诺基亚</a><a href="http://www.mianwww.com/html/category/company-list/yinhai" title="查看 银海软件面试题 笔试题"  class="sidebar_company">银海软件</a><a href="http://www.mianwww.com/html/category/company-list/dongfangguoxin" title="查看 东方国信面试题 笔试题"  class="sidebar_company">东方国信</a><a href="http://www.mianwww.com/html/category/company-list/pkusoft" title="查看 北大高科面试题 笔试题"  class="sidebar_company">北大高科</a><a href="http://www.mianwww.com/html/category/company-list/ruiyue" title="查看 瑞玥科技面试题 笔试题"  class="sidebar_company">瑞玥科技</a><a href="http://www.mianwww.com/html/category/company-list/qunshuo" title="查看 群硕面试题 笔试题"  class="sidebar_company">群硕</a><a href="http://www.mianwww.com/html/category/company-list/pg" title="查看 宝洁面试题 笔试题"  class="sidebar_company">宝洁</a><a href="http://www.mianwww.com/html/category/company-list/zhongyuanjituan" title="查看 中远集团面试题 笔试题"  class="sidebar_company">中远集团</a><a href="http://www.mianwww.com/html/category/company-list/csdn" title="查看 CSDN面试题 笔试题"  class="sidebar_company">CSDN</a><a href="http://www.mianwww.com/html/category/company-list/wangtong" title="查看 中国网通面试题 笔试题"  class="sidebar_company">中国网通</a><a href="http://www.mianwww.com/html/category/company-list/bleum" title="查看 博朗软件开发面试题 笔试题"  class="sidebar_company">博朗软件开发</a><a href="http://www.mianwww.com/html/category/company-list/synsoft" title="查看 协同时光面试题 笔试题"  class="sidebar_company">协同时光</a><a href="http://www.mianwww.com/html/category/company-list/baoxin" title="查看 宝信公司面试题 笔试题"  class="sidebar_company">宝信公司</a><a href="http://www.mianwww.com/html/category/company-list/yangguanghairong" title="查看 阳光海融面试题 笔试题"  class="sidebar_company">阳光海融</a><a href="http://www.mianwww.com/html/category/company-list/fangwei" title="查看 方纬交通面试题 笔试题"  class="sidebar_company">方纬交通</a><a href="http://www.mianwww.com/html/category/company-list/boyan" title="查看 博彦科技面试题 笔试题"  class="sidebar_company">博彦科技</a><a href="http://www.mianwww.com/html/category/company-list/symbio" title="查看 信必优面试题 笔试题"  class="sidebar_company">信必优</a><a href="http://www.mianwww.com/html/category/company-list/xinwangjia" title="查看 鑫万佳面试题 笔试题"  class="sidebar_company">鑫万佳</a><a href="http://www.mianwww.com/html/category/company-list/yahoo" title="查看 Yahoo面试题 笔试题"  class="sidebar_company">Yahoo</a><a href="http://www.mianwww.com/html/category/company-list/vancl" title="查看 凡客诚品面试题 笔试题"  class="sidebar_company">凡客诚品</a><a href="http://www.mianwww.com/html/category/company-list/ebay" title="查看 EBAY面试题 笔试题"  class="sidebar_company">EBAY</a><a href="http://www.mianwww.com/html/category/company-list/zhejiangdianzikouan" title="查看 浙江电子口岸面试题 笔试题"  class="sidebar_company">浙江电子口岸</a><a href="http://www.mianwww.com/html/category/company-list/longriver" title="查看 长河通信面试题 笔试题"  class="sidebar_company">长河通信</a><a href="http://www.mianwww.com/html/category/company-list/yihedianli" title="查看 益和电力面试题 笔试题"  class="sidebar_company">益和电力</a><a href="http://www.mianwww.com/html/category/company-list/pingao" title="查看 品高软件面试题 笔试题"  class="sidebar_company">品高软件</a><a href="http://www.mianwww.com/html/category/company-list/boershitong" title="查看 波尔世通信面试题 笔试题"  class="sidebar_company">波尔世通信</a><a href="http://www.mianwww.com/html/category/company-list/runxin" title="查看 润信科技面试题 笔试题"  class="sidebar_company">润信科技</a><a href="http://www.mianwww.com/html/category/company-list/srt" title="查看 世导科技面试题 笔试题"  class="sidebar_company">世导科技</a><a href="http://www.mianwww.com/html/category/company-list/lingyangtech" title="查看 凌阳科技面试题 笔试题"  class="sidebar_company">凌阳科技</a><a href="http://www.mianwww.com/html/category/company-list/dell" title="查看 戴尔面试题 笔试题"  class="sidebar_company">戴尔</a><a href="http://www.mianwww.com/html/category/company-list/mps" title="查看 美国芯源(MPS)面试题 笔试题"  class="sidebar_company">美国芯源(MPS)</a><a href="http://www.mianwww.com/html/category/company-list/huanuo" title="查看 华诺集团面试题 笔试题"  class="sidebar_company">华诺集团</a><a href="http://www.mianwww.com/html/category/company-list/longtong" title="查看 龙通科技面试题 笔试题"  class="sidebar_company">龙通科技</a><a href="http://www.mianwww.com/html/category/company-list/eastcom" title="查看 东信面试题 笔试题"  class="sidebar_company">东信</a><a href="http://www.mianwww.com/html/category/company-list/sunwave" title="查看 三维通信面试题 笔试题"  class="sidebar_company">三维通信</a><a href="http://www.mianwww.com/html/category/company-list/lucent" title="查看 朗讯面试题 笔试题"  class="sidebar_company">朗讯</a> </li></ul>
+</li>
+<li>
+	<h2><a href="http://www.mianwww.com/html/category/jobs">火爆猎头职位！</a></font></strong><img alt="猎头职位" src="http://www.mianwww.com/wp-content/themes/mianwww/images/hot.gif"></h2>
+      				<ul>		<li>
+		<a href="http://www.mianwww.com/html/2014/03/19918.html" rel="bookmark" title="上海招聘自动化架构师  上海20k">
+		上海招聘自动化架构师  上海...		</a>
+		</li>
+				<li>
+		<a href="http://www.mianwww.com/html/2014/03/19591.html" rel="bookmark" title="招募安全测试&#038;渗透攻防研究员（3名）">
+		招募安全测试&渗透攻防研究员...		</a>
+		</li>
+				<li>
+		<a href="http://www.mianwww.com/html/2014/02/19426.html" rel="bookmark" title="[招聘] [深圳] [Android 手机游戏/应用运营平台开发经理]">
+		[招聘] [深圳] [And...		</a>
+		</li>
+				<li>
+		<a href="http://www.mianwww.com/html/2014/02/19422.html" rel="bookmark" title="【社招内推】大众点评网 招聘 软件开发工程师">
+		【社招内推】大众点评网 招聘...		</a>
+		</li>
+				<li>
+		<a href="http://www.mianwww.com/html/2013/12/19199.html" rel="bookmark" title="JAVA工程师 + 2年工作经验 + 深圳">
+		JAVA工程师 + 2年工作...		</a>
+		</li>
+				<li>
+		<a href="http://www.mianwww.com/html/2013/12/19197.html" rel="bookmark" title="JAVA开发求职">
+		JAVA开发求职		</a>
+		</li>
+				</ul>
+	  	</li>     	
+
+
+  
+  </ul>
+</div>
+<!-- sidebar end -->
+  
+<!--cos-html-cache-safe-tag--></div><!-- [wrap] -->
+<!-- begin footer -->
+<div id="footer">
+  <p>&copy; IT 公司面试手册 2008  <a href="http://www.miibeian.gov.cn" target="_blank">浙ICP备09024606号</a> <a href="#">Top</a></p>
+</div>
+<div align="center">
+<p>版权声明：本站大部分内容为原创！ 另有少部分内容整理于网络，如需转载本站内容或关切版权事宜请联系站长。未经允许，严禁复制转载本站内容，否则将追究法律责任。
+本站欢迎与同类网站建立友情链接，请联系QQ:176687814
+</p>
+
+</div>
+<!-- [footer] -->
+<!-- Baidu Button BEGIN -->
+
+
+
+<!-- Baidu Button END -->
+
+</body>
+</html>
+
+<!--this is a real static html file created at 2014-04-01 12:10:30 by cos-html-cache 2.7.3 -->
