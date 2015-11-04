@@ -4,7 +4,7 @@
 // preg_replace(pattern, replacement, subject)
 // preg_filter(pattern, replacement, subject)
 
-/*正则表达式模式修饰符
+/** 正则表达式模式修饰符
 * i
   大小写不敏感
 * s
@@ -21,7 +21,7 @@
   相当于在模式前加了^,强制匹配字符串开头；
 * x
   表达式中的空白符将被忽略，除非空白符被转义
-*/
+**/
 
 
 /* 
@@ -109,6 +109,8 @@ $input = array('0abc','def','1ghi');
 $res = preg_grep($pattern, $input);
 var_dump($res);
 echo '<hr/>';
-
+/**
+  在正则表达式中匹配反斜杠(\),需要这样"\\\\",一次是在字符串中转义,一次是在正则表达式中转义
+**/
 
 ?> 
