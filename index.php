@@ -65,4 +65,8 @@ td{
 		<td><a href="<?php echo $url;?>/upload.php">upload.php</a></td>
 		<td>文件上传</td>
 	</tr>
+	<tr>
+		<td><a href="<?php echo $url;?>/date_time.php">date_time.php</a></td>
+		<td>日期时间</td>
+	</tr>
 </table>
