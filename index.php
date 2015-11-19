@@ -67,7 +67,7 @@ td{
 	</tr>
 	<tr>
 		<td><a href="<?php echo $url;?>/batch_file.php">batch_file.php</a></td>
-		<td>批处理文件</td>
+		<td>CLI批处理文件</td>
 	</tr>
 	<tr>
 		<td><a href="<?php echo $url;?>/date_time.php">date_time.php</a></td>
