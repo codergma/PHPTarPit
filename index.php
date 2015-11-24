@@ -73,4 +73,8 @@ td{
 		<td><a href="<?php echo $url;?>/date_time.php">date_time.php</a></td>
 		<td>日期时间</td>
 	</tr>
+	<tr>
+		<td><a href="<?php echo $url;?>/ZipArchive.php">ZipArchive.php</a></td>
+		<td>unix/windows使用ZipArchive类压缩及解压文件乱码问题</td>
+	</tr>
 </table>
