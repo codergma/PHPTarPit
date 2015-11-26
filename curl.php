@@ -6,9 +6,11 @@ $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, "http://www.baidu.com/");
 // curl_setopt($ch, CURLOPT_HEADER, 0);
 curl_setopt($ch,CURLOPT_CONNECTTIMEOUT,10);
-curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+curl_setopt($ch,CURLOPT_RETURNTRANSFER,0);
+curl_setopt($ch,CURLOPT_HEADER,1);
 // 抓取URL并把它传递给浏览器
 $file = curl_exec($ch);
 
 // 关闭cURL资源，并且释放系统资源
 curl_close($ch);
+// echo $file;
