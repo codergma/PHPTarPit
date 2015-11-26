@@ -38,12 +38,16 @@ td{
 		<td>$_SERVER[]数组的用法</td>
 	</tr>
 	<tr>
+		<td><a href="<?php echo $url;?>/header.php">header.php</a></td>
+		<td>header()函数用法</td>
+	</tr>
+	<tr>
 		<td><a href="<?php echo $url;?>/cookie.php">cookie.php</a></td>
 		<td>cookie用法</td>
 	</tr>
 	<tr>
-		<td><a href="<?php echo $url;?>/header.php">header.php</a></td>
-		<td>header()函数用法</td>
+		<td><a href="<?php echo $url;?>/session.php">session.php</a></td>
+		<td>session用法</td>
 	</tr>
 	<tr>
 		<td><a href="<?php echo $url;?>/json_encode_decode.php">json_encode_decode.php</a></td>
