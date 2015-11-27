@@ -81,4 +81,16 @@ td{
 		<td><a href="<?php echo $url;?>/ZipArchive.php">ZipArchive.php</a></td>
 		<td>unix/windows使用ZipArchive类压缩及解压文件乱码问题</td>
 	</tr>
+	<tr>
+		<td><a href="<?php echo $url;?>/Rolling_CURL.php">Rolling_CURL.php</a></td>
+		<td>Rolling_CURL测试</td>
+	</tr>
+	<tr>
+		<td><a href="<?php echo $url;?>/pcntl_xxx.php">pcntl_xxx.php</a></td>
+		<td>PHP多进程</td>
+	</tr>
+	<tr>
+		<td><a href="<?php echo $url;?>/phpspider.php">phpspider.php</a></td>
+		<td>phpspider测试</td>
+	</tr>
 </table>
