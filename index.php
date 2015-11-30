@@ -93,4 +93,8 @@ td{
 		<td><a href="<?php echo $url;?>/phpspider.php">phpspider.php</a></td>
 		<td>phpspider测试</td>
 	</tr>
+		<tr>
+		<td><a href="<?php echo $url;?>/Array.php">Array.php</a></td>
+		<td>数组</td>
+	</tr>
 </table>
