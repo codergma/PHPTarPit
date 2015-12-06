@@ -7,3 +7,4 @@ $data = array('foo'=>'bar',
 echo http_build_query($data) . "\n";
 debug_backtrace();
 get_extension_funcs('mysqli');
+posix_getpid();
