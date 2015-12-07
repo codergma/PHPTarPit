@@ -33,3 +33,8 @@ var_dump($arr3);
 // 移除数组第一个元素 
 array_shift();
 //array_walk
+function walk_callback($value,$key)
+{
+	echo $value.'--'.$key.PHP_EOL;
+}
+array_walk($arr, 'walk_callback');
