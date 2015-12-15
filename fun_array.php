@@ -16,13 +16,14 @@ $arr = array(
 $arr1 = array(2=>'x',3=>'y');
 $arr2 = array(5=>'z',8=>'w');
 $arr4 = array(1,2,3);
+$arr5 = array('1'=>'c','2'=>'a','3'=>'b');
 
 
 $variable = 'list';
 switch ($variable)
 {
 	case 'array_slice':
-		// array_slice默认会重新排序并重置数组的数字索引。
+		// 从数组中抽出一部分,array_slice默认会重新排序并重置数组的数字索引。
 		// 你可以通过将 preserve_keys 设为 TRUE 来改变此行为。
 		echo 'array_slice'.PHP_EOL;
 		$slice = array_slice($arr, 0,2,TRUE);
@@ -46,6 +47,19 @@ switch ($variable)
 		$ele = array_shift($arr);
 		var_dump($ele);
 		var_dump($arr);
+		break;
+	case 'array_unshift':
+		// 在数组开头插入元素, 数字索引被重置,字符索引不变
+		break;
+	case 'array_pop':
+		// 移除数组第一个元素 
+		echo 'array_shift'.PHP_EOL;
+		$ele = array_pop($arr);
+		var_dump($ele);
+		var_dump($arr);
+		break;
+	case 'array_push':
+		// 数组末尾插入元素
 		break;
 	case 'array_merge':
 		// 合并数组,如果是数字索引，键名将会重新索引
@@ -80,10 +94,32 @@ switch ($variable)
 		echo '<br/>';
 		break;
 	case 'list':
+		// 给变量赋值
 		list($one,$two,$three) = $arr4;
 		var_dump($one);
 		var_dump($two);
 		// var_dump($three);
+		break;
+	case 'array_reverse':
+		// 返回逆序的数组
+		$res = array_reverse($arr4);
+		var_dump($res);
+		break;
+	case 'sort';
+		// 排序有众多函数
+		// 不保留key=>value的关联
+		sort(array);
+		rsort(array);
+		// 保留key=>value的关联
+		asort(array);
+		arsort(array)
+		ksort(array);
+		krsort(array);
+		// 用户自定义规则
+		usort(array, cmp_function);
+		uasort(array, cmp_function);
+		uksort(array, cmp_function);
+		break;
 	default:
 		break;
 }
