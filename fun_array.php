@@ -17,9 +17,9 @@ $arr1 = array(2=>'x',3=>'y');
 $arr2 = array(5=>'z',8=>'w');
 $arr4 = array(1,2,3);
 $arr5 = array('1'=>'c','2'=>'a','3'=>'b');
+$arr6 = array('name'=>'chuizi','year'=>'213');
 
-
-$variable = 'list';
+$variable = 'extract';
 switch ($variable)
 {
 	case 'array_slice':
@@ -100,11 +100,17 @@ switch ($variable)
 		var_dump($two);
 		// var_dump($three);
 		break;
+	case 'extract':
+		// 将数组中的变量导入到当期符号表
+		extract($arr6);
+		echo "name : ".$name." year : ".$year;
+		break;
 	case 'array_reverse':
 		// 返回逆序的数组
 		$res = array_reverse($arr4);
 		var_dump($res);
 		break;
+/*
 	case 'sort';
 		// 排序有众多函数
 		// 不保留key=>value的关联
@@ -120,6 +126,7 @@ switch ($variable)
 		uasort(array, cmp_function);
 		uksort(array, cmp_function);
 		break;
+*/
 	default:
 		break;
 }
